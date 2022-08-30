@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="XmlFiles\**" />
+    <EmbeddedResource Remove="XmlFiles\**" />
+    <None Remove="XmlFiles\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.95.4" />
+    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+    <PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\rihal.challenge.Application\rihal.challenge.Application.csproj" />
+    <ProjectReference Include="..\rihal.challenge.Persistence\rihal.challenge.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

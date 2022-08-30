@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Features\StampLawyer\Queries\**" />
+    <Compile Remove="Models\DTOs\Logging\**" />
+    <Compile Remove="Models\ExcelModels\**" />
+    <Compile Remove="Models\XmlModels\**" />
+    <Compile Remove="Profiles\Logging\**" />
+    <EmbeddedResource Remove="Features\StampLawyer\Queries\**" />
+    <EmbeddedResource Remove="Models\DTOs\Logging\**" />
+    <EmbeddedResource Remove="Models\ExcelModels\**" />
+    <EmbeddedResource Remove="Models\XmlModels\**" />
+    <EmbeddedResource Remove="Profiles\Logging\**" />
+    <None Remove="Features\StampLawyer\Queries\**" />
+    <None Remove="Models\DTOs\Logging\**" />
+    <None Remove="Models\ExcelModels\**" />
+    <None Remove="Models\XmlModels\**" />
+    <None Remove="Profiles\Logging\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.3.6" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="6.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="NPOI" Version="2.5.5" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.15.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\rihal.challenge.Domain\rihal.challenge.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\" />
+  </ItemGroup>
+
+</Project>
