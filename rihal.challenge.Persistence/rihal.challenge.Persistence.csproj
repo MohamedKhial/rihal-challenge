@@ -13,9 +13,5 @@
     <ProjectReference Include="..\rihal.challenge.Application\rihal.challenge.Application.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="DbConfigurations\" />
-  </ItemGroup>
-
   
 </Project>

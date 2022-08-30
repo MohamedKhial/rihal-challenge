@@ -36,6 +36,10 @@
     <ProjectReference Include="..\rihal.challenge.Persistence\rihal.challenge.Persistence.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
   <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
 
 </Project>

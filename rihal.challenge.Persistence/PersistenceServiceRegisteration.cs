@@ -4,7 +4,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using rihal.challenge.Application.Common.Configurations;
 using rihal.challenge.Application.Contracts.Persistence;
-using rihal.challenge.Domain.Entities.AuthenticationAggregate;
 using rihal.challenge.Persistence.DbContexts;
 using rihal.challenge.Persistence.Repositories;
 namespace rihal.challenge.Persistence
