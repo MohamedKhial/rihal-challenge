@@ -23,6 +23,9 @@ namespace rihal.challenge.Persistence
 
             services.AddScoped(typeof(IAsyncRepo<,>), typeof(BaseRepo<,>));
             services.AddScoped(typeof(IUnitOfWork), typeof(UnitOfWork));
+            services.AddScoped(typeof(IClassRepo), typeof(ClassRepo));
+            services.AddScoped(typeof(IStudentRepo), typeof(StudentRepo));
+            services.AddScoped(typeof(ICountryRepo), typeof(CountryRepo));
 
          
 
